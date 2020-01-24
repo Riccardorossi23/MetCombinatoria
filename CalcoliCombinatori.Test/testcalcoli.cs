@@ -18,7 +18,7 @@ namespace CalcoliCombinatori.Test
         public void TestFattoriale2()
         {
             long n = 0;
-            double numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
+            long numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
             long risposta_aspettato = 1;
             Assert.AreEqual(risposta_aspettato, numero_attuale);
         }
@@ -26,7 +26,7 @@ namespace CalcoliCombinatori.Test
         public void TestFattoriale3()
         {
             long n = 5;
-            double numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
+            long numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
             long risposta_aspettato = 120;
             Assert.AreEqual(risposta_aspettato, numero_attuale);
         }
@@ -34,8 +34,16 @@ namespace CalcoliCombinatori.Test
         public void TestFattoriale4()
         {
             long n = 10;
-            double numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
+            long numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
             long risposta_aspettato = 3628800;
+            Assert.AreEqual(risposta_aspettato, numero_attuale);
+        }
+        [TestMethod]
+        public void TestFattoriale5()
+        {
+            long n = 50;
+            long numero_attuale = CalcoliEquazioniClass.Fattoriale(n);
+            long risposta_aspettato = ;
             Assert.AreEqual(risposta_aspettato, numero_attuale);
         }
     }

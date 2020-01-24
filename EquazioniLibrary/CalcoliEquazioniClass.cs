@@ -6,8 +6,9 @@ namespace EquazioniLibrary
     {
         public static long Fattoriale(long n)
         {
-            if (n == 0)
+            if (n < 1)
             {
+                return n = 1;
                 throw new Exception("il numero non deve essere negativo quindi non può essere calcolato");
             }
 
